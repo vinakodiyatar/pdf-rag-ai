@@ -33,8 +33,12 @@ export default function RootLayout({
           <Suspense fallback={<div>Loading...</div>}>
             <section>
               <Show when="signed-out">
-                <SignUpButton />
-              </Show>
+                <SignUpButton mode="modal">
+                  <button className="cursor-pointer rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:from-indigo-500 hover:to-violet-500 hover:shadow-lg active:scale-95">
+                    Get Started Free
+                  </button>
+                </SignUpButton>            
+                  </Show>
             </section>
 
             <Show when="signed-in">
