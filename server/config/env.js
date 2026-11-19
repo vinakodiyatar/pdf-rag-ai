@@ -13,7 +13,7 @@ export const env = {
   QDRANT_API_KEY: process.env.QDRANT_API_KEY || "",
   QDRANT_COLLECTION: process.env.QDRANT_COLLECTION || "pdf-docs",
   QUEUE_NAME: process.env.QUEUE_NAME || "file-upload-queue",
-  GEMINI_CHAT_MODEL: process.env.GEMINI_CHAT_MODEL || "gemini-2.5-flash",
+  GEMINI_CHAT_MODEL: process.env.GEMINI_CHAT_MODEL || "gemini-3.8-flash",
   GEMINI_EMBEDDING_MODEL:
     process.env.GEMINI_EMBEDDING_MODEL || "gemini-embedding-001",
   UPLOADS_DIR: path.resolve(process.cwd(), "uploads"),
